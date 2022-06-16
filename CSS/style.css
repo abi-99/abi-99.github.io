@@ -2,3 +2,16 @@ body {
     background-color: #C4848B;
 }
 
+.counter {
+    border: solid 3px black;
+    width: 500px;
+    height: 100px;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: baseline;
+    bottom: 10px; 
+}

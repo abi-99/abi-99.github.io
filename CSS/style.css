@@ -16,15 +16,14 @@ body {
 .drinks-flex {
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
     top: 0;
     left: 0;
 }
 
 .drink {
     margin-bottom: 0px;
-    z-index: 1;
-    align-items: flex-end;
-    justify-content: space-evenly;
 }
 
 body {

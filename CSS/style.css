@@ -24,6 +24,18 @@ body {
 
 .drink {
     margin-bottom: 0px;
+    height: 150px;
+    width: 150px;
+    transition: all .2s ease-in-out;
+}
+
+.cosmo {
+  background-image: url('Images\cosmo.png');
+}
+
+.drink:hover {
+  transform: scale(1.1);
+
 }
 
 body {
@@ -31,26 +43,38 @@ body {
     overflow: hidden;
   } 
   
-  .modal-window {
-    align-items: center;
-    background-color: rgba(0,0,0,0.7);
-    display: none;
-    justify-content: center;
+  .mask{
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
-    }
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.8);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+  }
   
-  .modal-message {
+  .modal {
     background-color: #235347;
     border: 4px solid #163b32;
-    font-size: 24px;
-    width: 500px; 
-    text-align: center;
-    padding: 40px 80px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    margin-left: -200px;
+    margin-top: -150px;
+    background: #bdc3c7;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    transform: translateY(45px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .modal-dismiss {
@@ -61,4 +85,14 @@ body {
     text-align: center; 
     width: 300px;
   }
-  
+
+  .active{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .active + .modal{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }

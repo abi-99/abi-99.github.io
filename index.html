@@ -5,14 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Killers Crazy Adventure</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
+    <title>Drink Party</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <h1>Pick a Drink</h1> 
+</head>
   <body>
-    <main>
-        <h1>MEOW</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+  <main>
+    <!-- Images (Counter and drinks) -->
+    <!-- <section class="counterTop"> -->
+      <!-- <div class="counter"> -->
+          <div class="drinks-flex">
+            <img id="cosmo" class="drink" src="Images\cosmo.png">
+            <img id="whiskey" class= "drink" src="Images\whiskey.png">
+            <img id= "maitai" class="drink" src="Images\MaiTai.png">
+          </div>
+          <img class="table" src="Images\Counter.png" >
+      <!-- </div>  -->
+    <!-- </section>   -->
+    <!-- Pop Ups -->
+   <div id="cosmoModal" class="mask">
+      <div class="modal">
+        <p>This is the drink Recipe</p>
+        <button id="closeCosmo" class="close">Pick Another Drink</button>
+      </div>
+    </div> 
+    <div id="whiskeyModal" class="mask">
+      <div class="modal">
+        <p>This is the drink Recipe</p>
+        <button id="closeWhiskey" class="close">Pick Another Drink</button>
+      </div>
+    </div> 
+    <div id="maiModal" class="mask">
+      <div class="modal">
+        <p>This is the drink Recipe</p>
+        <button id="closeMai" class="close">Pick Another Drink</button>
+      </div>
+    </div>   
+  </main>
+</body>
+<script src="JS\main.js"></script>
 </html>

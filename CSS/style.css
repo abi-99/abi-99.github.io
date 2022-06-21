@@ -29,12 +29,10 @@ body {
     transition: all .2s ease-in-out;
 }
 
-.cosmo {
-  background-image: url('Images\cosmo.png');
-}
 
 .drink:hover {
   transform: scale(1.1);
+  cursor: pointer;
 
 }
 
@@ -66,24 +64,26 @@ body {
     height: 300px;
     margin-left: -200px;
     margin-top: -150px;
-    background: #bdc3c7;
     z-index: 100;
-    visibility: hidden;
-    opacity: 0;
     transition: 0.5s ease-out;
     transform: translateY(45px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
-  .modal-dismiss {
+  .close {
     background-color: #C4848B;
     color: #235347;
     margin: 15px auto;
     padding: 10px 20px;
     text-align: center; 
     width: 300px;
+  }
+
+  .close:hover {
+    cursor: pointer;
   }
 
   .active{

@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drink Party</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/script.js"></script>
     <h1>Pick a Drink</h1> 
 </head>
   <body>
@@ -16,20 +15,33 @@
     <!-- <section class="counterTop"> -->
       <!-- <div class="counter"> -->
           <div class="drinks-flex">
-            <button class="cosmo drink"></button>
-            <button class="whiskey drink" src="Images\whiskey.png"></button> 
-            <button class="maitai drink" src="Images\MaiTai.png"></button>
+            <img id="cosmo" class="drink" src="Images\cosmo.png">
+            <img id="whiskey" class= "drink" src="Images\whiskey.png">
+            <img id= "maitai" class="drink" src="Images\MaiTai.png">
           </div>
           <img class="table" src="Images\Counter.png" >
       <!-- </div>  -->
     <!-- </section>   -->
     <!-- Pop Up -->
-   <div class="mask">
+   <div id="cosmoModal" class="mask">
       <div class="modal">
         <p>This is the drink Recipe</p>
-        <button class="close">Pick Another Drink</button>
+        <button id="closeCosmo" class="close">Pick Another Drink</button>
+      </div>
+    </div> 
+    <div id="whiskeyModal" class="mask">
+      <div class="modal">
+        <p>This is the drink Recipe</p>
+        <button id="closeWhiskey" class="close">Pick Another Drink</button>
+      </div>
+    </div> 
+    <div id="maiModal" class="mask">
+      <div class="modal">
+        <p>This is the drink Recipe</p>
+        <button id="closeMai" class="close">Pick Another Drink</button>
       </div>
     </div>   
   </main>
-  </body>
+</body>
+<script src="JS\main.js"></script>
 </html>
